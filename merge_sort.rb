@@ -6,7 +6,7 @@ def merge_sort(arr)
 	p x
 	p y
 	merge_sort(x)
-	merge_sory(y)
+	merge_sort(y)
 	merge(x,y,arr)
 end
 
@@ -42,3 +42,7 @@ def merge(a,b,orig)
 	p "Merged #{orig}"
 	orig
 end
+
+a = [5,1,-1,25,30,18,100]
+
+merge_sort(a)
